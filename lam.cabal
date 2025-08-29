@@ -21,9 +21,11 @@ executable lam
     other-modules:
         Types
         Lam
+        Util
     -- other-extensions:
     build-depends:    
         base ^>=4.19.2.0
       , ansi-terminal
+      , process
     hs-source-dirs:   app
     default-language: Haskell2010

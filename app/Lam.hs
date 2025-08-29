@@ -2,6 +2,7 @@ module Lam where
 
 import System.Console.ANSI 
 import System.IO (stdout, hFlush)
+import Util (wipeScreen)
 
 lamInit :: IO () 
 lamInit = do
@@ -9,7 +10,7 @@ lamInit = do
     if not supportsAnsi
     then fail "System doesnt support ANSI so Lam cannot run properly"
     else do 
-        clearScreen 
+        wipeScreen
         displayStart
 
 displayStart :: IO () 
