@@ -16,6 +16,6 @@ lamInit = do
 displayStart :: IO () 
 displayStart = do 
     setSGR [SetColor Foreground Vivid Magenta]
-    putStr "λ>"
+    putStr "λ> "
     setSGR [Reset]
     hFlush stdout
